@@ -13,7 +13,7 @@ categories:
 - "poems"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/23/alfredo.blog/7856d5e9c2ea7587521319f6ed8bc555.png
 opengraph:
-  title: "Alfredo Gutiérrez - Whiskey & Water"
+  title: "Alfredo - Whiskey & Water"
   image: https://s3.amazonaws.com/micro.blog/opengraph/2025/12/23/5682142.png
 url: "/2024/03/15/whiskey-water.html"
 ---

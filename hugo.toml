@@ -2,6 +2,7 @@ baseURL = "http://localhost:1313/"
 title = "Alfredo Gutiérrez"
 theme = "gutifredo"
 languageCode = "en"
+
 [pagination]
   pagerSize = 25
 

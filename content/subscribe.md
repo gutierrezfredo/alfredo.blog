@@ -2,10 +2,11 @@
 title: "Subscribe"
 navigation: true
 menu: main
-weight: 5
-date: 2025-12-23T22:22:35-0600
+weight: 9
+date: 2025-12-29T17:07:58-0600
 url: /subscribe/
 ---
+
 Subscribe to the email newsletter for this blog.
 
 <form method="POST" action="https://micro.blog/users/subscribe/281600">

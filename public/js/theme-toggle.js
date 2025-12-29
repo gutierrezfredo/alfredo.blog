@@ -1,80 +1,54 @@
-/**
- * Theme Toggle with SVG Icons
- * Toggles between light and dark mode with sun/moon icons
- */
 (function() {
-    const toggle = document.getElementById('theme-toggle');
-    if (!toggle) return;
+	const toggle = document.getElementById('theme-toggle');
+	const html = document.documentElement;
+	let isAnimating = false;
 
-    const html = document.documentElement;
-    const sunIcon = toggle.querySelector('.sun-icon');
-    const moonIcon = toggle.querySelector('.moon-icon');
-    const labelLight = toggle.querySelector('.toggle-label-light');
-    const labelDark = toggle.querySelector('.toggle-label-dark');
+	const DARK_ICON = '🏙️';
+	const LIGHT_ICON = '🌆';
 
-    // Get current theme
-    function getTheme() {
-        return localStorage.getItem('theme') ||
-            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    }
+	// Check for saved preference or system preference
+	function getPreferredTheme() {
+		const saved = localStorage.getItem('theme');
+		if (saved) return saved;
+		return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+	}
 
-    // Tint colors for subscribe card
-    const tints = [
-        'rgba(99, 179, 237, 0.08)',
-        'rgba(154, 230, 180, 0.08)',
-        'rgba(246, 173, 85, 0.08)',
-        'rgba(183, 148, 244, 0.08)'
-    ];
-    const darkTints = [
-        'rgba(99, 179, 237, 0.12)',
-        'rgba(154, 230, 180, 0.12)',
-        'rgba(246, 173, 85, 0.12)',
-        'rgba(183, 148, 244, 0.12)'
-    ];
+	// Apply theme without animation
+	function setTheme(theme) {
+		html.setAttribute('data-theme', theme);
+		toggle.textContent = theme === 'dark' ? DARK_ICON : LIGHT_ICON;
+		localStorage.setItem('theme', theme);
+	}
 
-    // Update icon and label visibility based on current theme
-    // Show sun + "Light" in dark mode (to switch to light)
-    // Show moon + "Dark" in light mode (to switch to dark)
-    function updateIcon(theme) {
-        if (theme === 'dark') {
-            sunIcon.style.display = 'block';
-            moonIcon.style.display = 'none';
-            if (labelLight) labelLight.style.display = '';
-            if (labelDark) labelDark.style.display = 'none';
-        } else {
-            sunIcon.style.display = 'none';
-            moonIcon.style.display = 'block';
-            if (labelLight) labelLight.style.display = 'none';
-            if (labelDark) labelDark.style.display = '';
-        }
-        // Update subscribe tint for theme
-        var idx = parseInt(getComputedStyle(html).getPropertyValue('--subscribe-tint-idx')) || 0;
-        html.style.setProperty('--subscribe-tint', theme === 'dark' ? darkTints[idx] : tints[idx]);
-    }
+	// Fade transition
+	function fadeToggle(newTheme) {
+		isAnimating = true;
+		toggle.classList.add('fading');
 
-    // Toggle theme
-    function toggleTheme() {
-        const currentTheme = getTheme();
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+		setTimeout(() => {
+			html.setAttribute('data-theme', newTheme);
+			toggle.textContent = newTheme === 'dark' ? DARK_ICON : LIGHT_ICON;
+			localStorage.setItem('theme', newTheme);
+			toggle.classList.remove('fading');
+			isAnimating = false;
+		}, 200);
+	}
 
-        html.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateIcon(newTheme);
-    }
+	// Initialize
+	setTheme(getPreferredTheme());
 
-    // Initialize
-    updateIcon(getTheme());
-    toggle.addEventListener('click', function(e) {
-        e.preventDefault();
-        toggleTheme();
-    });
+	// Toggle on click with fade
+	toggle.addEventListener('click', () => {
+		if (isAnimating) return;
+		const current = html.getAttribute('data-theme');
+		const newTheme = current === 'dark' ? 'light' : 'dark';
+		fadeToggle(newTheme);
+	});
 
-    // Listen for system preference changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-            const newTheme = e.matches ? 'dark' : 'light';
-            html.setAttribute('data-theme', newTheme);
-            updateIcon(newTheme);
-        }
-    });
+	// Listen for system preference changes
+	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+		if (!localStorage.getItem('theme')) {
+			setTheme(e.matches ? 'dark' : 'light');
+		}
+	});
 })();

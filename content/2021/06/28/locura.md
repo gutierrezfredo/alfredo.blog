@@ -13,7 +13,7 @@ categories:
 - "poems"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/23/alfredo.blog/03e8225d46112309f58cad5b482eb9d6.png
 opengraph:
-  title: "Alfredo Gutiérrez - Locura"
+  title: "Alfredo - Locura"
   image: https://s3.amazonaws.com/micro.blog/opengraph/2025/12/23/5682136.png
 url: "/2021/06/28/locura.html"
 ---

@@ -13,7 +13,7 @@ categories:
 - "poems"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/23/alfredo.blog/73a86542062aff5dd460dc9155b78175.png
 opengraph:
-  title: "Alfredo Gutiérrez - Madre"
+  title: "Alfredo - Madre"
   image: https://s3.amazonaws.com/micro.blog/opengraph/2025/12/23/5682134.png
 url: "/2021/05/31/madre.html"
 ---

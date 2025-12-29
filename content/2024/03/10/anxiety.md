@@ -13,7 +13,7 @@ categories:
 - "poems"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/23/alfredo.blog/5856e27adb84aa1f03269330e9d6b3e2.png
 opengraph:
-  title: "Alfredo Gutiérrez - Anxiety"
+  title: "Alfredo - Anxiety"
   image: https://s3.amazonaws.com/micro.blog/opengraph/2025/12/23/5682141.png
 url: "/2024/03/10/anxiety.html"
 ---

@@ -1,7 +1,7 @@
 <rss version="2.0">
   <channel>
     <title>Categories on Alfredo Gutiérrez</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>http://localhost:52496/categories/</link>
     <description></description>
     
     <language>en</language>
@@ -10,25 +10,25 @@
     
     <item>
       <title>Logs</title>
-      <link>http://localhost:1313/categories/logs/</link>
+      <link>http://localhost:52496/categories/logs/</link>
       <pubDate>Wed, 24 Dec 2025 21:56:50 -0600</pubDate>
-      <guid>http://localhost:1313/categories/logs/</guid>
+      <guid>http://localhost:52496/categories/logs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Poems</title>
-      <link>http://localhost:1313/categories/poems/</link>
+      <link>http://localhost:52496/categories/poems/</link>
       <pubDate>Tue, 19 Mar 2024 13:09:00 -0600</pubDate>
-      <guid>http://localhost:1313/categories/poems/</guid>
+      <guid>http://localhost:52496/categories/poems/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blogs</title>
-      <link>http://localhost:1313/categories/blogs/</link>
+      <link>http://localhost:52496/categories/blogs/</link>
       <pubDate>Sun, 09 Jul 2017 09:13:00 -0600</pubDate>
-      <guid>http://localhost:1313/categories/blogs/</guid>
+      <guid>http://localhost:52496/categories/blogs/</guid>
       <description></description>
     </item>
     

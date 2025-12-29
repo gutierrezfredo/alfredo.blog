@@ -13,13 +13,11 @@ categories:
 - "blogs"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/22/alfredo.blog/a9be810aa33a6237f675a5f884cd3ebb.png
 images:
-- https://alfredo.blog/uploads/2025/adff725045.jpg
+- https://cdn.uploads.micro.blog/281600/2025/adff725045.jpg
 photos:
-- https://alfredo.blog/uploads/2025/adff725045.jpg
+- https://cdn.uploads.micro.blog/281600/2025/adff725045.jpg
 photos_with_metadata:
-- url: https://alfredo.blog/uploads/2025/adff725045.jpg
-  width: 0
-  height: 0
+- url: https://cdn.uploads.micro.blog/281600/2025/adff725045.jpg
 url: "/2017/07/09/de-madrid-a-logroo.html"
 ---
 El invierno estaba llegando a sus últimos días, lo cual hacía del paisaje uno de los mas hermosos que jamás había recorrido.
@@ -49,4 +47,4 @@ Meli, que venía detrás de mi exclamó:
 <b>—</b> ¡Mira quien está aquí!...
 <blockquote>...Lo que ocurrió después fue el re-encuentro mas lindo de mi vida... Quise compartirlo.</blockquote>
 
-<img src="uploads/2025/adff725045.jpg">
+<img src="/uploads/2025/adff725045.jpg">

@@ -6,14 +6,14 @@ post_id: 5685415
 custom_summary: false
 summary: ""
 date: 2025-12-24T21:56:50-0600
-lastmod: 2025-12-26T15:06:51-0600
+lastmod: 2025-12-27T12:41:56-0600
 type: post
 categories:
 - "logs"
-thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/26/alfredo.blog/81e425d17623313348aedfc97428bc30.png
+thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/27/alfredo.blog/81e425d17623313348aedfc97428bc30.png
 opengraph:
-  title: "Alfredo Gutiérrez - Feliz navidad 🎄"
-  image: https://s3.amazonaws.com/micro.blog/opengraph/2025/12/26/5685415.png
+  title: "Alfredo - Feliz navidad 🎄"
+  image: https://s3.amazonaws.com/micro.blog/opengraph/2025/12/27/5685415.png
 url: "/2025/12/24/feliz-navidad.html"
 mastodon:
   id: "115778193915196324"

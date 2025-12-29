@@ -1,7 +1,7 @@
 <rss version="2.0">
   <channel>
     <title>Logs on Alfredo Gutiérrez</title>
-    <link>http://localhost:1313/categories/logs/</link>
+    <link>http://localhost:52496/categories/logs/</link>
     <description></description>
     
     <language>en</language>
@@ -10,7 +10,7 @@
     
     <item>
       <title></title>
-      <link>http://localhost:1313/2025/12/24/feliz-navidad.html</link>
+      <link>http://localhost:52496/2025/12/24/feliz-navidad.html</link>
       <pubDate>Wed, 24 Dec 2025 21:56:50 -0600</pubDate>
       
       <guid>http://gutifredo.micro.blog/2025/12/24/feliz-navidad.html</guid>
