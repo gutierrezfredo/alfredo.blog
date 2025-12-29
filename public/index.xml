@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alfredo Gutiérrez</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Alfredo Gutiérrez</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Dec 2025 15:06:51 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blogs</title>
+      <link>http://localhost:1313/blogs/</link>
+      <pubDate>Tue, 23 Dec 2025 22:22:35 -0600</pubDate>
+      <guid>http://localhost:1313/blogs/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://alfredo.blog/categories/blogs&#34;&gt;https://alfredo.blog/categories/blogs&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Poems</title>
+      <link>http://localhost:1313/poems/</link>
+      <pubDate>Tue, 23 Dec 2025 22:22:35 -0600</pubDate>
+      <guid>http://localhost:1313/poems/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://alfredo.blog/categories/poems&#34;&gt;https://alfredo.blog/categories/poems&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Photos</title>
+      <link>http://localhost:1313/photos/</link>
+      <pubDate>Tue, 23 Dec 2025 22:22:35 -0600</pubDate>
+      <guid>http://localhost:1313/photos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Alfredo</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Tue, 23 Dec 2025 22:22:35 -0600</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Designer by day, poet by night.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Subscribe</title>
+      <link>http://localhost:1313/subscribe/</link>
+      <pubDate>Tue, 23 Dec 2025 22:22:35 -0600</pubDate>
+      <guid>http://localhost:1313/subscribe/</guid>
+      <description>&lt;p&gt;Subscribe to the email newsletter for this blog.&lt;/p&gt;&#xA;&lt;form method=&#34;POST&#34; action=&#34;https://micro.blog/users/subscribe/281600&#34;&gt;&#xA;  &lt;input type=&#34;text&#34; name=&#34;email&#34; size=&#34;30&#34; placeholder=&#34;Your email address&#34; /&gt; &#xA;  &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; /&gt;&#xA;&lt;/form&gt;</description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/</guid>
+      <description>&lt;script language=&#34;javascript&#34;&gt;&#xA;&#xA;var archive_results = {};&#xA;&#xA;function runSearch(q) {&#xA;&#x9;let results_node = document.getElementById(&#34;list_results&#34;);&#xA;&#x9;results_node.innerHTML = &#34;&#34;;&#xA;&#x9;if (q.length &gt; 0) {&#xA;&#x9;&#x9;// split query into lowercase words&#xA;&#x9;&#x9;let keywords = q.toLowerCase().trim().split(/\s+/);&#xA;&#xA;&#x9;&#x9;for (let i = 0; i &lt; archive_results.items.length; i++) {&#xA;&#x9;&#x9;&#x9;let item = archive_results.items[i];&#xA;&#x9;&#x9;&#x9;let title_lower = item.title.toLowerCase();&#xA;&#x9;&#x9;&#x9;let text_lower = item.content_text.toLowerCase();&#xA;&#xA;&#x9;&#x9;&#x9;// combine title and text into one searchable string&#xA;&#x9;&#x9;&#x9;let full_text = title_lower + &#34; &#34; + text_lower;&#xA;&#xA;&#x9;&#x9;&#x9;// check if every keyword exists&#xA;&#x9;&#x9;&#x9;let match = keywords.every(function(k) {&#xA;&#x9;&#x9;&#x9;&#x9;return full_text.includes(k);&#xA;&#x9;&#x9;&#x9;});&#xA;&#xA;&#x9;&#x9;&#x9;if (match) {&#xA;&#x9;&#x9;&#x9;&#x9;let p_node = document.createElement(&#34;p&#34;);        &#xA;&#x9;&#x9;&#x9;&#x9;let link_node = document.createElement(&#34;a&#34;);&#xA;&#x9;&#x9;&#x9;&#x9;let d = Date.parse(item.date_published);&#xA;&#x9;&#x9;&#x9;&#x9;let date_s = new Date(d).toISOString().substr(0, 10);&#xA;&#x9;&#x9;&#x9;&#x9;let date_node = document.createTextNode(date_s); &#xA;&#x9;&#x9;&#x9;&#x9;link_node.appendChild(date_node);&#xA;&#x9;&#x9;&#x9;&#x9;link_node.href = item.url;&#xA;              &#x9;let title_node = null;&#xA;&#x9;&#x9;&#x9;&#x9;if (item.title.length &gt; 0) {&#xA;              &#x9;&#x9;title_node = document.createElement(&#34;span&#34;);&#xA;                  &#x9;title_node.innerHTML = &#34;: &lt;b&gt;&#34; + item.title + &#34;&lt;/b&gt;&#34;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;let s = item.content_text;&#xA;&#x9;&#x9;&#x9;&#x9;if (s.length &gt; 200) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;s = s.substr(0, 200) + &#34;...&#34;;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;              &#x9;let text_node = document.createElement(&#34;span&#34;);&#xA;             &#x9;text_node.innerHTML = &#34;: &#34; + s&#xA;&#x9;&#x9;&#x9;&#x9;p_node.appendChild(link_node);&#xA;              &#x9;if (title_node != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;p_node.appendChild(title_node);&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;p_node.appendChild(text_node);&#xA;&#x9;&#x9;&#x9;&#x9;results_node.appendChild(p_node);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;&#xA;function submitSearch(q) {&#xA;&#x9;runSearch(q);&#xA;&#x9;&#xA;&#x9;// push query into URL&#xA;&#x9;const url = new URL(window.location.href);&#xA;&#x9;url.searchParams.set(&#34;q&#34;, q);&#xA;&#x9;history.pushState({}, &#34;&#34;, url);&#xA;}&#xA;&#xA;document.addEventListener(&#34;DOMContentLoaded&#34;, function() {&#xA;&#x9;let loading_timer = setTimeout(function() {&#xA;&#x9;&#x9;// show status text if archive doesn&#39;t load very quickly&#xA;&#x9;&#x9;document.getElementById(&#34;list_loading&#34;).style.display = &#34;flex&#34;;&#xA;&#x9;}, 1500);&#xA;&#xA;&#x9;fetch(&#34;/archive/index.json&#34;).then(response =&gt; response.json()).then(data =&gt; {&#xA;&#x9;&#x9;archive_results = data;&#xA;&#xA;&#x9;&#x9;clearTimeout(loading_timer);&#xA;&#x9;&#x9;document.getElementById(&#34;list_loading&#34;).style.display = &#34;none&#34;;&#xA;&#xA;&#x9;&#x9;// restore from search args&#xA;&#x9;&#x9;const url = window.location.href;&#xA;&#x9;&#x9;const params = new URLSearchParams(new URL(url).search);&#xA;&#x9;&#x9;const q = params.get(&#34;q&#34;);&#xA;&#x9;&#x9;if (q &amp;&amp; (q.length &gt; 0)) {&#xA;&#x9;&#x9;&#x9;document.getElementById(&#34;input_search&#34;).value = q;&#xA;&#x9;&#x9;&#x9;runSearch(q);&#xA;&#x9;&#x9;}&#xA;&#x9;});&#xA;});&#xA;&#x9;&#xA;&lt;/script&gt;&#xA;&lt;style&gt;&#xA;&#xA;#search {&#xA;&#x9;display: none;&#xA;}&#xA;&#xA;form {&#xA;&#x9;display: flex;&#xA;&#x9;justify-content: center;&#xA;}&#xA;&#xA;#list_loading {&#xA;&#x9;display: none;&#xA;&#x9;font-size: 14px;&#xA;&#x9;justify-content: center;&#xA;}&#xA;&#xA;.field {&#xA;&#x9;width: 270px;&#xA;&#x9;height: 34px;&#xA;&#x9;font-size: 13px;&#xA;&#x9;font-weight: 400;&#xA;&#x9;padding-left: 12px;&#xA;&#x9;border: 2px solid #eee;&#xA;&#x9;margin-top: 20px;&#xA;&#x9;margin-bottom: 20px;&#xA;&#x9;border-radius: 17px;&#xA;&#x9;-webkit-appearance: none;&#xA;}&#xA;&#xA;&lt;/style&gt;&#xA;&lt;form onSubmit=&#34;return false;&#34;&gt;&#xA;&#x9;&lt;input class=&#34;field&#34; type=&#34;text&#34; name=&#34;q&#34; id=&#34;input_search&#34; placeholder=&#34;Search&#34; onChange=&#34;submitSearch(this.value.toLowerCase());&#34;&gt;&#xA;&lt;/form&gt;&#xA;&lt;div id=&#34;list_loading&#34;&gt;&#xA;&#x9;Loading posts...&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;list_results&#34;&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/2025/12/24/feliz-navidad.html</link>
+      <pubDate>Wed, 24 Dec 2025 21:56:50 -0600</pubDate>
+      <guid>http://localhost:1313/2025/12/24/feliz-navidad.html</guid>
+      <description>&lt;p&gt;Feliz navidad 🎄&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Archive</title>
+      <link>http://localhost:1313/archive/</link>
+      <pubDate>Tue, 23 Dec 2025 22:22:35 -0600</pubDate>
+      <guid>http://localhost:1313/archive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Tue, 23 Dec 2025 22:22:35 -0600</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;br&gt;&#xA;&lt;script data-letterbirduser=&#34;gutifredo&#34; src=&#34;https://letterbird.co/embed/v1.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Summer</title>
+      <link>http://localhost:1313/2024/03/19/summer.html</link>
+      <pubDate>Tue, 19 Mar 2024 13:09:00 -0600</pubDate>
+      <guid>http://localhost:1313/2024/03/19/summer.html</guid>
+      <description>&lt;p&gt;I find it so cold&lt;br&gt;&#xA;that this world wasn&amp;rsquo;t made&lt;br&gt;&#xA;for angels like you&lt;br&gt;&#xA;&amp;hellip;But do you believe in summer?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Whiskey &amp; Water</title>
+      <link>http://localhost:1313/2024/03/15/whiskey-water.html</link>
+      <pubDate>Fri, 15 Mar 2024 11:34:00 -0600</pubDate>
+      <guid>http://localhost:1313/2024/03/15/whiskey-water.html</guid>
+      <description>&lt;p&gt;She drank the whiskey,&lt;br&gt;&#xA;I chose the water;&lt;br&gt;&#xA;yet I still got tipsy&lt;br&gt;&#xA;staring at the girl with an absent father.&lt;/p&gt;&#xA;&lt;p&gt;No liquor have I ever&lt;br&gt;&#xA;drank to feel this way&lt;br&gt;&#xA;and it may not last forever,&lt;br&gt;&#xA;for I&amp;rsquo;m just another prey.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;It&amp;rsquo;s time for y&amp;rsquo;all to leave,&amp;quot;&lt;br&gt;&#xA;the bartender loudly screamed.&lt;br&gt;&#xA;The bar will close at 3.&lt;br&gt;&#xA;It&amp;rsquo;s time to stop this dream.&lt;/p&gt;&#xA;&lt;p&gt;No words that I could speak&lt;br&gt;&#xA;to the greatest of all thieves,&lt;br&gt;&#xA;for stealing all the self-worth&lt;br&gt;&#xA;that any man deserves to keep.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anxiety</title>
+      <link>http://localhost:1313/2024/03/10/anxiety.html</link>
+      <pubDate>Sun, 10 Mar 2024 14:29:00 -0600</pubDate>
+      <guid>http://localhost:1313/2024/03/10/anxiety.html</guid>
+      <description>&lt;p&gt;Like the sting of a bee,&lt;br&gt;&#xA;that never goes away.&lt;br&gt;&#xA;No antidote for it,&lt;br&gt;&#xA;&amp;ldquo;just breathe&amp;rdquo; is all they say.&lt;/p&gt;&#xA;&lt;p&gt;I am not sick,&lt;br&gt;&#xA;nor ecstatic as I play.&lt;br&gt;&#xA;Yet my heart shrinks&lt;br&gt;&#xA;when facing a new tray.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Don&amp;rsquo;t dwell too much on it,&amp;quot;&lt;br&gt;&#xA;my therapist would say.&lt;br&gt;&#xA;The more attention it receives&lt;br&gt;&#xA;the bigger it becomes, I bet.&lt;/p&gt;&#xA;&lt;p&gt;I guess I&amp;rsquo;ll live with it,&lt;br&gt;&#xA;an invitation to the game.&lt;br&gt;&#xA;Teaming up,&lt;br&gt;&#xA;to see how far we&amp;rsquo;ll get.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Locura</title>
+      <link>http://localhost:1313/2021/06/28/locura.html</link>
+      <pubDate>Mon, 28 Jun 2021 05:00:00 -0600</pubDate>
+      <guid>http://localhost:1313/2021/06/28/locura.html</guid>
+      <description>&lt;p&gt;Desde esta lejanía&lt;br&gt;&#xA;te extraño con locura,&lt;br&gt;&#xA;te pienso noche y día&lt;br&gt;&#xA;y el tiempo no se apura&lt;/p&gt;&#xA;&lt;p&gt;Por si no te lo había dicho,&lt;br&gt;&#xA;que no exista la duda&lt;br&gt;&#xA;de que esto no es capricho,&lt;br&gt;&#xA;es amor, amor que dura.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Madre</title>
+      <link>http://localhost:1313/2021/05/31/madre.html</link>
+      <pubDate>Mon, 31 May 2021 12:33:00 -0600</pubDate>
+      <guid>http://localhost:1313/2021/05/31/madre.html</guid>
+      <description>&lt;p&gt;Los besos de mi madre&lt;br&gt;&#xA;me mantuvieron bien despierto,&lt;br&gt;&#xA;ahuyentando lo cobarde&lt;br&gt;&#xA;en un mundo tan incierto.&lt;br&gt;&lt;/p&gt;&#xA;&lt;p&gt;Gracias madre,&lt;br&gt;&#xA;por tu amor&lt;br&gt;&#xA;e incondicional sustento.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Nostalgia</title>
+      <link>http://localhost:1313/2021/05/22/nostalgia.html</link>
+      <pubDate>Sat, 22 May 2021 12:06:00 -0600</pubDate>
+      <guid>http://localhost:1313/2021/05/22/nostalgia.html</guid>
+      <description>&lt;p&gt;Duermo en una cama&lt;br&gt;&#xA;muy grande y ancha&lt;br&gt;&#xA;para que por la noche&lt;br&gt;&#xA;quepa toda la nostalgia&lt;br&gt;&#xA;que me dejaron los que hoy&lt;br&gt;&#xA;me hacen tanta falta.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Abundancia</title>
+      <link>http://localhost:1313/2021/05/22/abundancia.html</link>
+      <pubDate>Sat, 22 May 2021 12:05:00 -0600</pubDate>
+      <guid>http://localhost:1313/2021/05/22/abundancia.html</guid>
+      <description>&lt;p&gt;Testaruda mi ignorancia,&lt;br&gt;&#xA;por haberme vendado la mirada&lt;br&gt;&#xA;ante un mundo y su abundancia,&lt;br&gt;&#xA;al que por haber llegado sin nada,&lt;br&gt;&#xA;hasta las pérdidas son ganancia.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Complejo</title>
+      <link>http://localhost:1313/2020/10/07/complejo.html</link>
+      <pubDate>Wed, 07 Oct 2020 14:19:00 -0600</pubDate>
+      <guid>http://localhost:1313/2020/10/07/complejo.html</guid>
+      <description>&lt;p&gt;Cuando ni Dios&lt;br&gt;&#xA;concede todas nuestras plegarias,&lt;br&gt;&#xA;aquí estoy yo,&lt;br&gt;&#xA;con intensiones involuntarias&lt;br&gt;&#xA;de complacer a todos&lt;br&gt;&#xA;para que no me cojan con rabia.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Miedos</title>
+      <link>http://localhost:1313/2020/10/05/miedos.html</link>
+      <pubDate>Mon, 05 Oct 2020 09:35:00 -0600</pubDate>
+      <guid>http://localhost:1313/2020/10/05/miedos.html</guid>
+      <description>&lt;p&gt;Haré una fiesta&lt;br&gt;&#xA;e invitaré a mis miedos,&lt;br&gt;&#xA;sobre todo a aquellos&lt;br&gt;&#xA;que gritan «¡no puedo!».&lt;/p&gt;&#xA;&lt;p&gt;Para descubrir&lt;br&gt;&#xA;de qué están hechos&lt;br&gt;&#xA;y darle fin&lt;br&gt;&#xA;a sus engañosos juegos.&lt;/p&gt;&#xA;&lt;p&gt;Notarán&lt;br&gt;&#xA;que no les temo,&lt;br&gt;&#xA;pues ya comprendo&lt;br&gt;&#xA;que no son serios.&lt;/p&gt;&#xA;&lt;p&gt;Al final&lt;br&gt;&#xA;me reiré de ellos,&lt;br&gt;&#xA;pues llegaron grandes,&lt;br&gt;&#xA;pero se irán pequeños.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reflejo</title>
+      <link>http://localhost:1313/2020/08/14/reflejo.html</link>
+      <pubDate>Fri, 14 Aug 2020 05:30:00 -0600</pubDate>
+      <guid>http://localhost:1313/2020/08/14/reflejo.html</guid>
+      <description>&lt;p&gt;Ante mi espejo&lt;br&gt;&#xA;con ojos tiesos,&lt;br&gt;&#xA;juzgo un reflejo &lt;br&gt;&#xA;lleno de tropiezos.&lt;/p&gt;&#xA;&lt;p&gt;Pensamientos van y vienen,&lt;br&gt;&#xA;que creo poco ciertos.&lt;/p&gt;&#xA;&lt;p&gt;Son amargos y muy tercos,&lt;br&gt;&#xA;carentes de finales, &lt;br&gt;&#xA;carentes de comienzos.&lt;/p&gt;&#xA;&lt;p&gt;Siguen juzgando&#xA;a través del espejo,&lt;br&gt;&#xA;sin saber que hay tanto&lt;br&gt;&#xA;que no tiene reflejo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Amores</title>
+      <link>http://localhost:1313/2020/08/09/amores.html</link>
+      <pubDate>Sun, 09 Aug 2020 18:32:00 -0600</pubDate>
+      <guid>http://localhost:1313/2020/08/09/amores.html</guid>
+      <description>&lt;p&gt;Un dolor del pasado&lt;br&gt;&#xA;que no pudo ser consolado&lt;br&gt;&#xA;se transformó en el miedo&lt;br&gt;&#xA;a salir lastimados.&lt;/p&gt;&#xA;&lt;p&gt;Por eso, hoy,&lt;br&gt;&#xA;más que amar,&lt;br&gt;&#xA;preferimos ser amados.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Razón</title>
+      <link>http://localhost:1313/2019/11/27/tener-la-razn.html</link>
+      <pubDate>Wed, 27 Nov 2019 10:33:03 -0600</pubDate>
+      <guid>http://localhost:1313/2019/11/27/tener-la-razn.html</guid>
+      <description>&lt;p&gt;Cuando te das cuenta&lt;br&gt;&#xA;que las opiniones &lt;br&gt;&#xA;son tan subjetivas,&lt;br&gt;&#xA;tener la razón&lt;br&gt;&#xA;no vale tanto como creías.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>El Cielo</title>
+      <link>http://localhost:1313/2019/11/21/el-cielo-en-la-tierra.html</link>
+      <pubDate>Thu, 21 Nov 2019 10:34:13 -0600</pubDate>
+      <guid>http://localhost:1313/2019/11/21/el-cielo-en-la-tierra.html</guid>
+      <description>&lt;p&gt;Muchos creen que al morir&lt;br&gt;&#xA;el cielo cesará toda dolencia.&lt;/p&gt;&#xA;&lt;p&gt;¿No sabrán que están en él&lt;br&gt;&#xA;pero lo han hecho&lt;br&gt;&#xA;un desastre de experiencia?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ansiedad</title>
+      <link>http://localhost:1313/2019/11/20/la-ansiedad.html</link>
+      <pubDate>Wed, 20 Nov 2019 20:18:42 -0600</pubDate>
+      <guid>http://localhost:1313/2019/11/20/la-ansiedad.html</guid>
+      <description>&lt;p&gt;Es normal que entre en la mente, &lt;br&gt;&#xA;que te agobie y atormente,&lt;br&gt;&#xA;combatirla hará que aumente, &lt;br&gt;&#xA;hay que obviarla solamente.&lt;/p&gt;&#xA;&lt;p&gt;Volverá y será latente, &lt;br&gt;&#xA;y tendrás que ser valiente, &lt;br&gt;&#xA;no le creas porque miente,&lt;br&gt;&#xA;Vale más seguir sonriente.&lt;/p&gt;&#xA;&lt;p&gt;Y tampoco estés pendiente, &lt;br&gt;&#xA;es mejor si no se siente, &lt;br&gt;&#xA;sin importar cuánto frecuente.&lt;br&gt;&#xA;que no se vuelva tu presente.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>De Madrid a Logroño</title>
+      <link>http://localhost:1313/2017/07/09/de-madrid-a-logroo.html</link>
+      <pubDate>Sun, 09 Jul 2017 09:13:00 -0600</pubDate>
+      <guid>http://localhost:1313/2017/07/09/de-madrid-a-logroo.html</guid>
+      <description>&lt;p&gt;El invierno estaba llegando a sus últimos días, lo cual hacía del paisaje uno de los mas hermosos que jamás había recorrido.&lt;/p&gt;&#xA;&lt;p&gt;Arribamos a la estación de Logroño después de 4 horas de camino, a donde me esperaba Meli. Temía que después de tantos años no me fuese a reconocer.&lt;/p&gt;&#xA;&lt;p&gt;La vi a lo lejos, justo después de bajarme del autobús, pero 17 años sin verla me hicieron dudar si era realmente ella. La gente cambia mucho fisicamente en 17 años.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>El Mar Que Calma</title>
+      <link>http://localhost:1313/2017/06/21/el-mar-que-calma.html</link>
+      <pubDate>Wed, 21 Jun 2017 19:41:00 -0600</pubDate>
+      <guid>http://localhost:1313/2017/06/21/el-mar-que-calma.html</guid>
+      <description>&lt;p style=&#34;text-align: left;&#34;&gt;Sentado en la playa noté como otros, al igual que yo, estaban tan relajados mirando el mar.&lt;/p&gt;&#xA;Y pensé... “El mar calma. El mar te hace olvidar, absorviendo lo malo que puedas pensar”.&#xA;&lt;p&gt;Luego pensé&amp;hellip; “Por eso la gente es tan felíz en el mar. Porque el mar te quita el pensar”.&lt;/p&gt;&#xA;&lt;p&gt;Por eso la gente inteligente se entrega al mar. Se dejan absorver por la marea, hacia muy adentro en su inmensidad.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mi Primer Post</title>
+      <link>http://localhost:1313/2017/01/05/mi-primer-post.html</link>
+      <pubDate>Thu, 05 Jan 2017 19:32:47 -0600</pubDate>
+      <guid>http://localhost:1313/2017/01/05/mi-primer-post.html</guid>
+      <description>&lt;p&gt;Antes de que me invada la duda y comience a vacilar conmigo mismo sobre si valdrá o no la pena crear contenido para alguien a quien pueda o no importarle&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Comenzaré confesando que es algo que siempre había querido hacer por muchas razones como: saber que mejoraría mucho mi gramática, sentir el alivio de expresar mis pensamientos y forma de ver las cosas, aportar conocimiento a personas que están empezando a vivir mi mismo camino, entre otras.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

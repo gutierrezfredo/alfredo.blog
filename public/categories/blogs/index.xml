@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Alfredo Gutiérrez</title>
+    <link>http://localhost:1313/categories/blogs/</link>
+    <description>Recent content in Blogs on Alfredo Gutiérrez</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Dec 2025 20:02:06 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>De Madrid a Logroño</title>
+      <link>http://localhost:1313/2017/07/09/de-madrid-a-logroo.html</link>
+      <pubDate>Sun, 09 Jul 2017 09:13:00 -0600</pubDate>
+      <guid>http://localhost:1313/2017/07/09/de-madrid-a-logroo.html</guid>
+      <description>&lt;p&gt;El invierno estaba llegando a sus últimos días, lo cual hacía del paisaje uno de los mas hermosos que jamás había recorrido.&lt;/p&gt;&#xA;&lt;p&gt;Arribamos a la estación de Logroño después de 4 horas de camino, a donde me esperaba Meli. Temía que después de tantos años no me fuese a reconocer.&lt;/p&gt;&#xA;&lt;p&gt;La vi a lo lejos, justo después de bajarme del autobús, pero 17 años sin verla me hicieron dudar si era realmente ella. La gente cambia mucho fisicamente en 17 años.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>El Mar Que Calma</title>
+      <link>http://localhost:1313/2017/06/21/el-mar-que-calma.html</link>
+      <pubDate>Wed, 21 Jun 2017 19:41:00 -0600</pubDate>
+      <guid>http://localhost:1313/2017/06/21/el-mar-que-calma.html</guid>
+      <description>&lt;p style=&#34;text-align: left;&#34;&gt;Sentado en la playa noté como otros, al igual que yo, estaban tan relajados mirando el mar.&lt;/p&gt;&#xA;Y pensé... “El mar calma. El mar te hace olvidar, absorviendo lo malo que puedas pensar”.&#xA;&lt;p&gt;Luego pensé&amp;hellip; “Por eso la gente es tan felíz en el mar. Porque el mar te quita el pensar”.&lt;/p&gt;&#xA;&lt;p&gt;Por eso la gente inteligente se entrega al mar. Se dejan absorver por la marea, hacia muy adentro en su inmensidad.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mi Primer Post</title>
+      <link>http://localhost:1313/2017/01/05/mi-primer-post.html</link>
+      <pubDate>Thu, 05 Jan 2017 19:32:47 -0600</pubDate>
+      <guid>http://localhost:1313/2017/01/05/mi-primer-post.html</guid>
+      <description>&lt;p&gt;Antes de que me invada la duda y comience a vacilar conmigo mismo sobre si valdrá o no la pena crear contenido para alguien a quien pueda o no importarle&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Comenzaré confesando que es algo que siempre había querido hacer por muchas razones como: saber que mejoraría mucho mi gramática, sentir el alivio de expresar mis pensamientos y forma de ver las cosas, aportar conocimiento a personas que están empezando a vivir mi mismo camino, entre otras.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

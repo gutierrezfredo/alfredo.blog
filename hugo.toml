@@ -1,0 +1,21 @@
+baseURL = "http://localhost:1313/"
+title = "Alfredo Gutiérrez"
+theme = "gutifredo"
+languageCode = "en"
+[pagination]
+  pagerSize = 25
+
+[params]
+  description = "Designer by day, poet by night."
+  about_me = "Designer by day, poet by night."
+  theme_seconds = "1234567890"
+
+  [params.author]
+    name = "Alfredo Gutiérrez"
+    avatar = "https://micro.blog/alfredo/avatar.jpg"
+    username = "alfredo"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
