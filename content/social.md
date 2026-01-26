@@ -5,9 +5,7 @@ date: 2025-12-29T17:27:20-0600
 url: /social/
 ---
 
-<div class="social-media">
-  <a class="social-icon" href="/contact"><i class="ph-fill ph-envelope"></i></a>
-  <a class="social-icon" href="https://www.threads.com/@gutifredo" target="_blank"><i class="ph-fill ph-threads-logo"></i></a>
-  <a class="social-icon" href="https://bsky.app/profile/alfredo.blog" target="_blank"><i class="ph-fill ph-butterfly"></i></a>
-  <a class="social-icon" href="https://instagram.com/gutifredo" target="_blank"><i class="ph-fill ph-instagram-logo"></i></a>
-</div>
+<a href="/contact"><i class="fas fa-envelope"></i></a>
+<a href="https://www.threads.com/@gutifredo"><i class="fab fa-threads"></i></a>
+<a href="https://bsky.app/profile/alfredo.design"><i class="fab fa-bluesky"></i></a>
+<a href="https://instagram.com/gutifredo"><i class="fab fa-instagram"></i></a>

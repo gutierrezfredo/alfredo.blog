@@ -13,11 +13,13 @@ categories:
 - "blogs"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/22/alfredo.blog/a9be810aa33a6237f675a5f884cd3ebb.png
 images:
-- https://cdn.uploads.micro.blog/281600/2025/adff725045.jpg
+- /uploads/2025/adff725045.jpg
 photos:
-- https://cdn.uploads.micro.blog/281600/2025/adff725045.jpg
+- /uploads/2025/adff725045.jpg
 photos_with_metadata:
-- url: https://cdn.uploads.micro.blog/281600/2025/adff725045.jpg
+- url: /uploads/2025/adff725045.jpg
+  width: 0
+  height: 0
 url: "/2017/07/09/de-madrid-a-logroo.html"
 ---
 El invierno estaba llegando a sus últimos días, lo cual hacía del paisaje uno de los mas hermosos que jamás había recorrido.

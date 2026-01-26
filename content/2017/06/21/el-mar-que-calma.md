@@ -13,11 +13,13 @@ categories:
 - "blogs"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/22/alfredo.blog/28666f911ec57e221445a2c1a620dd9b.png
 images:
-- https://cdn.uploads.micro.blog/281600/2025/c9e273334c.jpg
+- /uploads/2025/c9e273334c.jpg
 photos:
-- https://cdn.uploads.micro.blog/281600/2025/c9e273334c.jpg
+- /uploads/2025/c9e273334c.jpg
 photos_with_metadata:
-- url: https://cdn.uploads.micro.blog/281600/2025/c9e273334c.jpg
+- url: /uploads/2025/c9e273334c.jpg
+  width: 0
+  height: 0
 url: "/2017/06/21/el-mar-que-calma.html"
 ---
 <p style="text-align: left;">Sentado en la playa noté como otros, al igual que yo, estaban tan relajados mirando el mar.</p>
