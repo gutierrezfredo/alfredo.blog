@@ -1,0 +1,84 @@
+<script>
+
+/* Unique IDs for Body and Form tags 
+-----------------------------------------------------------------*/
+(function() {
+  'use strict';
+
+  // Check if localStorage is available
+  function storageAvailable() {
+    try {
+      var test = '__storage_test__';
+      localStorage.setItem(test, test);
+      localStorage.removeItem(test);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  // Generate random ID
+  function generateId(prefix) {
+    return prefix + '-' + Math.random().toString(36).substring(2, 9);
+  }
+
+  // Wait for DOM to be ready
+  function ready(fn) {
+    if (document.readyState !== 'loading') {
+      fn();
+    } else {
+      document.addEventListener('DOMContentLoaded', fn);
+    }
+  }
+
+  ready(function() {
+    var pageKey = window.location.pathname || '/';
+    var useStorage = storageAvailable();
+
+    // Body ID
+    var pageId;
+    if (useStorage) {
+      pageId = localStorage.getItem('pageId-' + pageKey);
+      if (!pageId) {
+        pageId = generateId('page');
+        localStorage.setItem('pageId-' + pageKey, pageId);
+      }
+    } else {
+      pageId = generateId('page');
+    }
+    document.body.id = pageId;
+
+    // Form IDs
+    var forms = document.querySelectorAll('form');
+    for (var i = 0; i < forms.length; i++) {
+      var form = forms[i];
+      var formKey = pageKey + '-form-' + i;
+      var formId;
+
+      if (useStorage) {
+        formId = localStorage.getItem(formKey);
+        if (!formId) {
+          formId = generateId('form');
+          localStorage.setItem(formKey, formId);
+        }
+      } else {
+        formId = generateId('form');
+      }
+      form.id = formId;
+    }
+  });
+})();
+
+
+
+/* Replacing nav items with icons
+-----------------------------------------------------------------*/
+document.querySelectorAll('a').forEach(link => {
+  if (link.textContent.trim() === 'Search') {
+    link.innerHTML = '<i class="ph-bold ph-magnifying-glass"></i>';
+  }
+  if (link.classList.contains('normal')) {
+    link.innerHTML = '<i class="ph-fill ph-house"></i>';
+  }
+});
+</script>

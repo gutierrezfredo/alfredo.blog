@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
+<body>
+  {{ partial "header.html" . }}
+  <section id="wrapper" {{ with .File }}{{ if eq .Dir "about/" }} class="bio" {{ end }}{{ end }}>
+	{{ block "main" . }}{{ end }}
+  </section>
+  <div id="social-section">
+    <div class="social-media">
+      <a class="social-icon" href="/contact"><i class="ph-fill ph-envelope"></i></a>
+      <a class="social-icon" href="https://www.threads.com/@gutifredo" target="_blank"><i class="ph-fill ph-threads-logo"></i></a>
+      <a class="social-icon" href="https://bsky.app/profile/alfredo.blog" target="_blank"><i class="ph-fill ph-butterfly"></i></a>
+      <a class="social-icon" href="https://instagram.com/gutifredo" target="_blank"><i class="ph-fill ph-instagram-logo"></i></a>
+    </div>
+  </div>
+  {{ partial "footer.html" . }}
+  {{ partial "custom_footer.html" . }}
+		{{ range .Site.Params.plugins_js }}
+			<script src="{{ . }}"></script>
+		{{ end }}
+	<script src="{{ "js/theme-toggle.js" | relURL }}"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{{ define "main" }}
+{{/* Hidden pages - redirect to homepage */}}
+{{ if eq .RelPermalink "/intro/" }}
+<script>window.location.replace('/');</script>
+<noscript><meta http-equiv="refresh" content="0;url=/"></noscript>
+
+{{/* Blogs page - show posts with "blogs" category */}}
+{{ else if eq .RelPermalink "/blogs/" }}
+<article class="h-entry post">
+  <header>
+    <h1 class="p-name">{{ .Title }}</h1>
+  </header>
+</article>
+<ul id="post-list" class="h-feed">
+{{ $posts := where (where .Site.RegularPages "Type" "post") "Params.categories" "intersect" (slice "blogs") }}
+{{ range $posts.ByDate.Reverse }}
+    {{ partial "post-item.html" . }}
+{{ end }}
+</ul>
+
+{{/* Poems page - show posts with "poems" category */}}
+{{ else if eq .RelPermalink "/poems/" }}
+<article class="h-entry post">
+  <header>
+    <h1 class="p-name">{{ .Title }}</h1>
+  </header>
+</article>
+<ul id="post-list" class="h-feed">
+{{ $posts := where (where .Site.RegularPages "Type" "post") "Params.categories" "intersect" (slice "poems") }}
+{{ range $posts.ByDate.Reverse }}
+    {{ partial "post-item.html" . }}
+{{ end }}
+</ul>
+
+{{/* Regular page */}}
+{{ else }}
+<article class="h-entry post">
+  <header>
+    <h1 class="p-name">{{ .Title }}</h1>
+  </header>
+  <section class="e-content post-body">
+      {{ .Content }}
+  </section>
+</article>
+{{ end }}
+{{ end }}

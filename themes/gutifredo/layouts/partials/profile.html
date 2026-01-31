@@ -1,0 +1,32 @@
+<div class="profile">
+  <section id="wrapper">
+    {{ $intro := .Site.GetPage "/intro" }}
+    {{ with $intro }}
+    <header class="h-card">
+      {{ $content := .RawContent }}
+      {{ $lines := split $content "\n" }}
+      {{ range $lines }}
+        {{ $line := trim . " \t\r\n" }}
+        {{ if hasPrefix $line "![" }}
+          {{ $imgUrl := replaceRE `!\[.*?\]\((.*?)\)` "$1" $line }}
+          <a class="u-url" href="/about/">
+            <img id="avatar" class="u-photo" src="{{ $imgUrl }}" />
+          </a>
+        {{ else if hasPrefix $line "<h1>" }}
+          {{ $name := replaceRE `<h1>(.*?)</h1>` "$1" $line }}
+          <h1 class="p-name" rel="me">{{ $name }}</h1>
+        {{ else if hasPrefix $line "# " }}
+          <h1 class="p-name" rel="me">{{ replaceRE `^# ` "" $line }}</h1>
+        {{ end }}
+      {{ end }}
+    </header>
+    {{ else }}
+    <header class="h-card">
+      <a class="u-url" href="/about/">
+        <img id="avatar" class="u-photo" src="{{ .Site.Params.author.avatar }}" width="96" height="96" />
+      </a>
+      <h1 class="p-name" rel="me">{{ .Site.Params.author.name }}</h1>
+    </header>
+    {{ end }}
+  </section>
+</div>
