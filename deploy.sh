@@ -4,7 +4,7 @@
 # Syncs content from Obsidian and pushes to GitHub Pages
 
 OBSIDIAN_PATH="/Users/alfredo/Library/Mobile Documents/iCloud~md~obsidian/Documents/Docs/Projects/alfredo.blog"
-REPO_PATH="/Users/alfredo/Developer/github.com/gutierrezfredo/alfredo.blog-local"
+REPO_PATH="/Users/alfredo/Developer/github.com/gutierrezfredo/alfredo.blog"
 
 echo "Deploying alfredo.blog..."
 echo ""
