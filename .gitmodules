@@ -1,0 +1,3 @@
+[submodule "themes/gutifredo"]
+	path = themes/gutifredo
+	url = git@github.com:gutierrezfredo/alfredo.blog-theme.git
